@@ -22,7 +22,7 @@ jobs:
       uses: lucacome/docker-image-update-checker@v1.1.0
       with:
         #base-image: rclone/rclone:latest
-        base-image: alpine/alpine
+        base-image: alpine
         image: niveksan/bw-localbackup:arm
 
       # only execute subsequent steps if an update is actually NEEDED.
