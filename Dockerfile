@@ -6,7 +6,7 @@ FROM alpine:3.10
 
 # install sqlite, curl, bash (for script)
 RUN apk add --no-cache \
-  sqlite \
+  sqlite=3.39 \
   curl \
   bash
 
