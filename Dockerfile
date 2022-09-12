@@ -1,7 +1,7 @@
 # docker build --no-cache --network=host -t bitwarden_rs-local-backup:arm .
 # docker-compose up -d ODER docker run --network=host --rm -it bitwarden_rs-local-backup:arm sh
-#FROM alpine:3.10
-FROM alpine:latest
+#FROM alpine:latest
+FROM alpine:3.10
 
 
 # install sqlite, curl, bash (for script)
