@@ -17,8 +17,8 @@ sqlite3 /db.sqlite3 ".backup '/tmp/db.sqlite3'"
 # TESTEN - gehe in /tmp und erstelle dann das tar von db.sqlite3 - FUNKTIONIERT
 tar cvzf /backups/${BACKUP_FILE}.tar.gz -C /tmp db.sqlite3
 
-# TESTEN - Verzeichnis Attachments packen und in /backups legen
-tar cvzf /backups/${BACKUP_FILE_ATT}.tar.gz -C /attachments
+# TESTEN - Verzeichnis Attachments packen und in /backups legen RESULT: tar: empty archive
+tar cvzf /backups/${BACKUP_FILE_ATT}.tar.gz /attachments
 
 # cleanup tmp folder
 rm -rf /tmp/*
